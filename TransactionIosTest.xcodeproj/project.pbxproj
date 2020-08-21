@@ -10,12 +10,19 @@
 		47CB0F5824EE9B640038CA65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F5724EE9B640038CA65 /* AppDelegate.swift */; };
 		47CB0F5A24EE9B640038CA65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F5924EE9B640038CA65 /* SceneDelegate.swift */; };
 		47CB0F5C24EE9B640038CA65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F5B24EE9B640038CA65 /* ViewController.swift */; };
-		47CB0F5F24EE9B640038CA65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CB0F5D24EE9B640038CA65 /* Main.storyboard */; };
 		47CB0F6224EE9B640038CA65 /* TransactionIosTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F6024EE9B640038CA65 /* TransactionIosTest.xcdatamodeld */; };
 		47CB0F6424EE9B660038CA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CB0F6324EE9B660038CA65 /* Assets.xcassets */; };
 		47CB0F6724EE9B660038CA65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CB0F6524EE9B660038CA65 /* LaunchScreen.storyboard */; };
 		47CB0F7224EE9B670038CA65 /* TransactionIosTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F7124EE9B670038CA65 /* TransactionIosTestTests.swift */; };
 		47CB0F7D24EE9B670038CA65 /* TransactionIosTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F7C24EE9B670038CA65 /* TransactionIosTestUITests.swift */; };
+		47CB0F8C24EE9CA00038CA65 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F8B24EE9CA00038CA65 /* Transaction.swift */; };
+		47CB0F8F24EE9D9F0038CA65 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F8E24EE9D9F0038CA65 /* RestManager.swift */; };
+		47CB0F9124EE9E870038CA65 /* FakeRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F9024EE9E870038CA65 /* FakeRestManager.swift */; };
+		47CB0F9324EE9FF00038CA65 /* TransactionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F9224EE9FF00038CA65 /* TransactionApi.swift */; };
+		47CB0F9724EEA32F0038CA65 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F9624EEA32F0038CA65 /* TransactionViewController.swift */; };
+		47CB0F9C24EEA3BB0038CA65 /* TransactionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CB0F9B24EEA3BB0038CA65 /* TransactionViewCell.swift */; };
+		47ED2F3A24EF4AE0007D6599 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED2F3824EF4AE0007D6599 /* TransactionDetailViewController.swift */; };
+		47ED2F3E24EF50FD007D6599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47ED2F3C24EF50FD007D6599 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,6 @@
 		47CB0F5724EE9B640038CA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47CB0F5924EE9B640038CA65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		47CB0F5B24EE9B640038CA65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		47CB0F5E24EE9B640038CA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47CB0F6124EE9B640038CA65 /* TransactionIosTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransactionIosTest.xcdatamodel; sourceTree = "<group>"; };
 		47CB0F6324EE9B660038CA65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47CB0F6624EE9B660038CA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		47CB0F7824EE9B670038CA65 /* TransactionIosTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionIosTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CB0F7C24EE9B670038CA65 /* TransactionIosTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionIosTestUITests.swift; sourceTree = "<group>"; };
 		47CB0F7E24EE9B670038CA65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47CB0F8B24EE9CA00038CA65 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		47CB0F8E24EE9D9F0038CA65 /* RestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		47CB0F9024EE9E870038CA65 /* FakeRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRestManager.swift; sourceTree = "<group>"; };
+		47CB0F9224EE9FF00038CA65 /* TransactionApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionApi.swift; sourceTree = "<group>"; };
+		47CB0F9624EEA32F0038CA65 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		47CB0F9B24EEA3BB0038CA65 /* TransactionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewCell.swift; sourceTree = "<group>"; };
+		47ED2F3824EF4AE0007D6599 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionDetailViewController.swift; path = Views/TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		47ED2F3D24EF50FD007D6599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +115,14 @@
 		47CB0F5624EE9B640038CA65 /* TransactionIosTest */ = {
 			isa = PBXGroup;
 			children = (
+				47CB0F9824EEA34A0038CA65 /* Views */,
+				47CB0F8A24EE9C7F0038CA65 /* Models */,
 				47CB0F5724EE9B640038CA65 /* AppDelegate.swift */,
 				47CB0F5924EE9B640038CA65 /* SceneDelegate.swift */,
 				47CB0F5B24EE9B640038CA65 /* ViewController.swift */,
-				47CB0F5D24EE9B640038CA65 /* Main.storyboard */,
+				47ED2F3824EF4AE0007D6599 /* TransactionDetailViewController.swift */,
 				47CB0F6324EE9B660038CA65 /* Assets.xcassets */,
+				47ED2F3C24EF50FD007D6599 /* Main.storyboard */,
 				47CB0F6524EE9B660038CA65 /* LaunchScreen.storyboard */,
 				47CB0F6824EE9B660038CA65 /* Info.plist */,
 				47CB0F6024EE9B640038CA65 /* TransactionIosTest.xcdatamodeld */,
@@ -129,6 +146,34 @@
 				47CB0F7E24EE9B670038CA65 /* Info.plist */,
 			);
 			path = TransactionIosTestUITests;
+			sourceTree = "<group>";
+		};
+		47CB0F8A24EE9C7F0038CA65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47CB0F8B24EE9CA00038CA65 /* Transaction.swift */,
+				47CB0F8D24EE9D730038CA65 /* Controller */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47CB0F8D24EE9D730038CA65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47CB0F8E24EE9D9F0038CA65 /* RestManager.swift */,
+				47CB0F9024EE9E870038CA65 /* FakeRestManager.swift */,
+				47CB0F9224EE9FF00038CA65 /* TransactionApi.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47CB0F9824EEA34A0038CA65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47CB0F9B24EEA3BB0038CA65 /* TransactionViewCell.swift */,
+				47CB0F9624EEA32F0038CA65 /* TransactionViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +280,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47ED2F3E24EF50FD007D6599 /* Main.storyboard in Resources */,
 				47CB0F6724EE9B660038CA65 /* LaunchScreen.storyboard in Resources */,
 				47CB0F6424EE9B660038CA65 /* Assets.xcassets in Resources */,
-				47CB0F5F24EE9B640038CA65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +308,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				47CB0F6224EE9B640038CA65 /* TransactionIosTest.xcdatamodeld in Sources */,
+				47CB0F9C24EEA3BB0038CA65 /* TransactionViewCell.swift in Sources */,
 				47CB0F5C24EE9B640038CA65 /* ViewController.swift in Sources */,
 				47CB0F5824EE9B640038CA65 /* AppDelegate.swift in Sources */,
+				47CB0F8F24EE9D9F0038CA65 /* RestManager.swift in Sources */,
+				47CB0F9724EEA32F0038CA65 /* TransactionViewController.swift in Sources */,
 				47CB0F5A24EE9B640038CA65 /* SceneDelegate.swift in Sources */,
+				47CB0F8C24EE9CA00038CA65 /* Transaction.swift in Sources */,
+				47CB0F9124EE9E870038CA65 /* FakeRestManager.swift in Sources */,
+				47CB0F9324EE9FF00038CA65 /* TransactionApi.swift in Sources */,
+				47ED2F3A24EF4AE0007D6599 /* TransactionDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,20 +353,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		47CB0F5D24EE9B640038CA65 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				47CB0F5E24EE9B640038CA65 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		47CB0F6524EE9B660038CA65 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				47CB0F6624EE9B660038CA65 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		47ED2F3C24EF50FD007D6599 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47ED2F3D24EF50FD007D6599 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
