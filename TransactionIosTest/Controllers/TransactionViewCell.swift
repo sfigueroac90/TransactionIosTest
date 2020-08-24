@@ -10,7 +10,8 @@ import UIKit
 
 class TransactionViewCell: UITableViewCell {
 
-    @IBOutlet var title: UILabel!
+
+    @IBOutlet var heading: UILabel!
     @IBOutlet var Description: UILabel!
     @IBOutlet var points: UILabel!
     
@@ -23,14 +24,15 @@ class TransactionViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+        print("selected");
         // Configure the view for the selected state
     }
     
     func set(from:Transaction){
         
-        title.text = from.headerText
+        heading.text = from.headerText
         Description.text = from.descriptionText
-        points.text = from.points
+        points.text = String(from.points)
         
     }
 

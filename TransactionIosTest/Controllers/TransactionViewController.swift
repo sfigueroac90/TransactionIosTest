@@ -9,21 +9,31 @@
 import UIKit
 
 class TransactionViewController: UITableViewController {
-    
-    
+        
     var transactions: [Transaction] = [Transaction(),Transaction(),Transaction()]
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Tapped")
+        print(indexPath)
+        
+        if let viewController = storyboard?.instantiateViewController(identifier: "TransactionDetailViewController") as? TransactionDetailViewController {
+            viewController.transaction = transactions[indexPath.row]
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+        
     }
 
-    // MARK: - Table view data source
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.allowsSelection = true;
+        
+        transactions = TransactionHandler().parseJSON()!;
+
+
+    }
+
+
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -37,14 +47,7 @@ class TransactionViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        /*
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
-
-        return cell
- */
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionViewCell", for: indexPath) as? TransactionViewCell  else {
                    fatalError("The dequeued cell is not an instance of CardViewCell.")
                }
@@ -53,6 +56,8 @@ class TransactionViewController: UITableViewController {
            
                return cell
     }
+    
+    
     
 
     /*
