@@ -10,7 +10,9 @@ import UIKit
 
 class TransactionViewCell: UITableViewCell {
 
-
+    
+    @IBOutlet var cv: UIView!
+    
     @IBOutlet var heading: UILabel!
     @IBOutlet var Description: UILabel!
     @IBOutlet var points: UILabel!
@@ -33,6 +35,16 @@ class TransactionViewCell: UITableViewCell {
         heading.text = from.headerText
         Description.text = from.descriptionText
         points.text = String(from.points)
+        
+        
+       
+        
+        if ( from.displayType == "BONUS" ){
+        
+            cv.backgroundColor = UIColor.init(red: 235/255, green: 190/255, blue: 245/255, alpha:255/255)
+        }
+        
+ 
         
     }
 

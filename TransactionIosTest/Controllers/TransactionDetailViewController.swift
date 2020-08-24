@@ -13,6 +13,7 @@ class TransactionDetailViewController: UIViewController {
     var transaction:Transaction? = nil
     
    
+    @IBOutlet var BonusLabel: UILabel!
     @IBOutlet var Header: UILabel!
     @IBOutlet var Description: UILabel!
     @IBOutlet var Points: UILabel!
@@ -26,6 +27,15 @@ class TransactionDetailViewController: UIViewController {
     
     func setText(){
         if let transaction = transaction {
+            
+            
+            if(transaction.displayType == "NORMAL") {
+                BonusLabel.isHidden = true;
+                
+            }else {
+                BonusLabel.isHidden = false;
+            }
+            
             Header.text = transaction.headerText
             Description.text = transaction.descriptionText
             Points.text = String(transaction.points)

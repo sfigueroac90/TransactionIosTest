@@ -67,6 +67,8 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="Description" destination="gBn-Yo-Cqc" id="HUC-fD-aLW"/>
+                                    <outlet property="contentView" destination="9fK-V3-Qa6" id="Ttj-oe-U7k"/>
+                                    <outlet property="cv" destination="9fK-V3-Qa6" id="xat-A7-yfe"/>
                                     <outlet property="heading" destination="O8o-20-x4x" id="HVo-Hu-tmu"/>
                                     <outlet property="points" destination="BkK-6S-fBs" id="rOg-nQ-EzM"/>
                                 </connections>
@@ -210,6 +212,7 @@
                     <navigationItem key="navigationItem" id="rnX-Vs-Swd"/>
                     <connections>
                         <outlet property="BONUS" destination="Miz-CC-Sb4" id="DtB-E4-dR9"/>
+                        <outlet property="BonusLabel" destination="Miz-CC-Sb4" id="2mt-fC-fcp"/>
                         <outlet property="Description" destination="Gkj-JN-qfG" id="6wy-Kd-PfM"/>
                         <outlet property="DetailText" destination="Ywn-xz-O3j" id="xWY-by-fNr"/>
                         <outlet property="Header" destination="UBs-j3-3yj" id="ATF-eE-4Ac"/>
